@@ -24,7 +24,8 @@ def split_word(word):
 
 random_word = random.choice(words)
 
-headers = dict(Authorization=input("> Please enter a token so we can test if it works! (Make sure to have the channel not be bypassable and have the bot in that server)\n> "))
+headers = dict(Authorization=input("> Please enter a token so we can test if it works! (Make sure to have the channel "
+                                   "not set to bypassed and have the bot in that server)\n> "))
 data = {
     "content": f"{split_word(random_word)}",
     "tts": False
